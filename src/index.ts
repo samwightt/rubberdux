@@ -17,7 +17,5 @@ export const initialize = <
   return {
     ...initPipes<Event, State, Action>(store),
     ...initSelectors(store),
-    getState: () => store.getState(),
-    subscribe: (func: () => void) => store.subscribe(func),
   };
 };
