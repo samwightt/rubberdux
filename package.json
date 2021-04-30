@@ -1,6 +1,6 @@
 {
   "name": "rubberdux",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "./dist/cjs/src/index.js",
   "module": "./dist/esm/src/index.js",
@@ -8,10 +8,11 @@
     "dev": "run-p tsc:watch nodemon",
     "tsc:watch": "tsc --watch --incremental",
     "nodemon": "nodemon dist/index.js",
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepack": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sam Wight <samwight@hey.com>",
   "license": "ISC",
   "devDependencies": {
     "@reduxjs/toolkit": "^1.5.1",
