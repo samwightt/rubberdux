@@ -16,7 +16,7 @@ way to build Redux stores. [You can find the tutorial here](https://redux-toolki
 
 To install in one go:
 
-````
+```
 # In your project's directory
 npm install @reduxjs/toolkit rxjs rubberdux
 ```
@@ -25,16 +25,13 @@ After installing, create a `rubberdux.ts` file (or `.js` file if you're using Ja
 You'll need to import your Redux store (we're assuming you already have one) and the `initialize` function from rubberdux.
 
 ```typescript
-import yourStore from './path/to/your/store';
-import { initialize } from 'rubberdux';
+import yourStore from "./path/to/your/store";
+import { initialize } from "rubberdux";
 
-const {
-  dispatch,
-  createPipe,
-  createRootSelector,
-  fromSelectors,
-} = initialize(yourStore);
-````
+const { dispatch, createPipe, createRootSelector, fromSelectors } = initialize(
+  yourStore
+);
+```
 
 You're now ready to start using rubberdux :)
 
